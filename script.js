@@ -6,7 +6,7 @@ fetch('https://api.github.com/user/repos', {
     method: 'GET',
     headers: {
       'Accept': 'application/vnd.github+json',
-      'Authorization': 'Bearer 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'
+      'Authorization': 'Bearer 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'
     },
     // body: JSON.stringify({
     //   title: 'Created with the REST API',
@@ -23,7 +23,7 @@ fetch('https://api.github.com/user/repos', {
           let query = input
           // console.log("query", input);
           let elm = data
-
+           
           let displaydata = await elm.filter((eveny) => {
             if (query == " ") {
               // console.log("All Repo", eveny);
@@ -40,9 +40,9 @@ fetch('https://api.github.com/user/repos', {
               description,
               topics,
               pushed_at
-
+            
             } = object;
-            // Returning the values
+                
             return `<div>
               <h3 class="demo"> ${name} </h3>
               <h5 class="public"> ${visibility} </h5>
@@ -57,7 +57,7 @@ fetch('https://api.github.com/user/repos', {
         }
         disuser()
 
-
+     
         btn.addEventListener("click", disuser)
       })
     }
@@ -66,8 +66,8 @@ fetch('https://api.github.com/user/repos', {
   )
   .catch(error => console.error(error, "failed to load"));
 
-// dark mode function
-function fun() {
-  let elm = document.body
-  elm.classList.toggle("dark")
-}
+  // dark mode function
+  function fun(){
+     let elm = document.body
+     elm.classList.toggle("dark")
+  }
