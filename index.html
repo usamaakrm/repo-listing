@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repositories Listing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="flx">
+        <div class="nav-item1 flx">
+            <img src="assets/github-142-svgrepo-com.svg" alt="" width="30px" style="color: grey;">
+            <h4>usamaakrm</h4>
+        </div>
+        <div class="nav-item2">
+            <ul class="flx">
+                <li>Overview</li>
+                <li class="active">Repositories</li>
+                <li>Projects</li>
+                <li>Packages</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- profile section -->
+    <section class="profile flx">
+        <div class="dp-img">
+            <img src="assets/p1.jpg" alt="" class="hero-img">
+        </div>
+        <div class="details">
+            <h2>Usama Akram</h2>
+            <p class="m-1">I like to craft solid and scalable frontend products with great user-experinece. <br>
+                Code 👨‍💻 + Design ✨ = 💝</p>
+            <div class="flx tit">
+                <img src="assets/location-svgrepo-com.svg" alt="" srcset="" width="14px">
+                <h4>Bangalore, India</h4>
+            </div>
+            <div class="flx tit">
+                <img src="assets/linkedin-161-svgrepo-com.svg" alt="" srcset="" width="14px">
+                <a href="https://www.linkedin.com/in/usamaakrm"> linkedin/in/usamakrm</a>
+            </div>
+            <div class="flx tit">
+                <img src="assets/portfolio-bag-svgrepo-com.svg" alt="" srcset="" width="14px">
+                <a href="https:usaama.netlify.app">usaama.netlify.app</a>
+            </div>
+            <input id="values" type="text" name="name" placeholder="Find a Repository..." autofocus
+                class="m-1 search-input">
+            <button id="btn" type="button" class="btn">Search</button>
+        </div>
+        <!--  dark mode -->
+        <div class="flx dark-mode" onclick="fun()">
+            <img src="assets/night-mode-svgrepo-com (1).svg" alt="" width="40px" height="40px">
+            <span>Light/Dark Mode</span>
+        </div>
+    </section>
+
+    <div id="hello">
+
+    </div>
+    <!-- repo list section -->
+    <section class="repo-container  flx" id="main">
+
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
